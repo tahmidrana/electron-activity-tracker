@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron Active Window and Script Logger</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    pre {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f4f4f4;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 4px;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Electron Active Window & Script Logger</h1>
+
+  <button id="get-active-window">Get Active Window</button>
+  <button id="run-shell">Run Shell Script</button>
+  <button id="run-powershell">Run PowerShell Script</button>
+
+  <pre id="output">Active window details and script output will be shown here...</pre>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
